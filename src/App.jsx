@@ -1,9 +1,8 @@
-import WelcomeMessage from "./components/WelcomeMessage";
-
+import Greeting from "./components/Greeting";
 
 const App = () => {
   return <div>
-    <WelcomeMessage />
+    <Greeting />
   </div>;
 }
 
