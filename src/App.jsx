@@ -1,16 +1,13 @@
-import Person from "./components/Person";
-import Product from "./components/Product";
+import Card from "./components/Card";
+
 
 const App = () => {
     return <div>
-      <Person
-      name = "Don"
-      age = {25}
-      />
-      <Product
-      name = "Phone"
-      price = {1000}
-      />
+      <Card>
+        <h1>Hello</h1>
+        <p>World</p>
+        
+      </Card>
     </div>
 };
 
