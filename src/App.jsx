@@ -1,14 +1,18 @@
-import Card from "./components/Card";
+const ValidPassword = () => <h1>Valid</h1>
+const InValidPassword = () => <h1>Invalid</h1>
 
+const Password = ({isValid}) => {
+  // if(isValid){
+  //   return <ValidPassword />
+  // }
+  // return <InValidPassword />
+  return isValid ? <ValidPassword /> : <InValidPassword />
+}
 
 const App = () => {
-    return <div>
-      <Card>
-        <h1>Hello</h1>
-        <p>World</p>
-        
-      </Card>
-    </div>
+    return <section>
+      <Password isValid={true}/>
+    </section>
 };
 
 export default App;
